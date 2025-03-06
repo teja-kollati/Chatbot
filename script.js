@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const promptInput = document.getElementById('prompt');
     const submitButton = document.getElementById('submit');
     const chatHistory = document.getElementById('chat-history');
-    const apiKey = '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';
+    const apiKey = 'YOUR_API_KEY';
     const apiUrl = 'https://openrouter.ai/api/v1/chat/completions';
-    const model = 'google/gemini-2.0-flash-thinking-exp:free';
+    const model = 'YOUR_MODEL_NAME';
 
     function formatMessage(message) {
         message = message.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>'); // Bold
